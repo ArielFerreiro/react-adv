@@ -11,22 +11,6 @@ export const useShoppingCart = () => {
 
         setShoppingCart( prev => {
 
-        const productInCart: ProductInCart = prev[product.id] || { ...product, count: 0 };
-
-        if ( Math.max(productInCart.count + count, 0) > 0 ) {
-            productInCart.count += count;
-        
-            return {
-            ...prev,
-            [product.id]: productInCart
-            }
-        }
-
-        // sino lo borra
-        const { [product.id]: toDelete, ...rest } = prev;
-        return { ...rest };
-
-        /*
             if (count === 0) {
 
             // MIRA COMO BORRAR LA ENTRADA DE UN OBJETO
@@ -40,7 +24,7 @@ export const useShoppingCart = () => {
             ...prev,
             [ product.id ]: { ...product, count }
             }      
-        */
+        
         });
         
     }
