@@ -1,0 +1,96 @@
+[
+    {
+        "type": "input",
+        "name": "firstName",
+        "label": "First Name",
+        "value": "",
+        "placeholder": "Enter your first name",
+        "validations": [
+            {
+                "type": "required",
+                "message": "First name is required"
+            },
+            {
+                "type": "minLength",
+                "value": 5,
+                "message": "First name must be at least 5 characters long"
+            },
+            {
+                "type": "maxLength",
+                "value": 10,
+                "message": "First name must be at most 10 characters long"
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastName",
+        "label": "Last Name",
+        "value": "",
+        "placeholder": "Enter your last name",
+        "validations": [
+            {
+                "type": "required",
+                "message": "Last name is required"
+            },
+            {
+                "type": "minLength",
+                "value": 3,
+                "message": "Last name must be at least 3 characters long"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "label": "Email",
+        "value": "",
+        "placeholder": "Enter your email",
+        "validations": [
+            {
+                "type": "required",
+                "message": "Email is required"
+            },
+            {
+                "type": "email",
+                "message": "Email is invalid"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favouriteGame",
+        "label": "Favourite Game",
+        "value": "",
+        "options": [
+
+            {
+                "id": 1,
+                "label": "Chess"
+            },
+            {
+                "id": 2,
+                "label": "Metal Gear"
+            },
+            {
+                "id": 3,
+                "label": "Zelda"
+            },
+            {
+                "id": 4,
+                "label": "Mario"
+            },
+            {
+                "id": 5,
+                "label": "Sonic"
+            }
+        ],
+        "validations": [
+            {
+                "type": "required",
+                "message": "Favourite game is required"
+            }
+        ]
+    }
+
+]
